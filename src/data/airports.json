@@ -1,0 +1,16 @@
+[
+  {
+    "iata": "JFK",
+    "icao": "KJFK",
+    "name": "John F. Kennedy International Airport",
+    "lat": 40.6413,
+    "lon": -73.7781
+  },
+  {
+    "iata": "LHR",
+    "icao": "EGLL",
+    "name": "London Heathrow Airport",
+    "lat": 51.47,
+    "lon": -0.4543
+  }
+]

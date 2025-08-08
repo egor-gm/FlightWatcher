@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: flightwatcher-web
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    autoDeploy: false
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: true
+      - key: TELEGRAM_WEBHOOK_SECRET
+        sync: true
+      - key: PUBLIC_URL
+        sync: true
+      - key: UPSTASH_REDIS_REST_URL
+        sync: true
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: true
+      - key: AERODATABOX_API_KEY
+        sync: true
+  - type: worker
+    name: flightwatcher-worker
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run worker
+    autoDeploy: false
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: true
+      - key: TELEGRAM_WEBHOOK_SECRET
+        sync: true
+      - key: PUBLIC_URL
+        sync: true
+      - key: UPSTASH_REDIS_REST_URL
+        sync: true
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: true
+      - key: AERODATABOX_API_KEY
+        sync: true

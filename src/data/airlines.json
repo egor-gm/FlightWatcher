@@ -1,0 +1,12 @@
+[
+  {
+    "iata": "AA",
+    "icao": "AAL",
+    "name": "American Airlines"
+  },
+  {
+    "iata": "BA",
+    "icao": "BAW",
+    "name": "British Airways"
+  }
+]
