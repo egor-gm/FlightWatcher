@@ -1,5 +1,5 @@
 node_modules/
-dist/
+# allow tracking built dist
 .env
 .env.*
 *.log
